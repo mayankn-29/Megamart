@@ -9,13 +9,31 @@ body {
 
 /* 1 rem = 16 px */
 
-header {
-  background-color: #404040;
-  padding: 1rem;
+.site-container {
+  min-height: 100vh;
 }
 
-header a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
+main {
+  flex: 1;
+  /* to occupy whole screen */
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap; /* if there is no space in row new item will be pushed to the new line*/
+  justify-content: center;
+}
+
+.product {
+  border: 1px #404040 solid;
+  margin: 1rem;
+}
+
+.product img {
+  width: 100%;
+  max-width: 330px;
+}
+
+.product-info {
+  padding: 1rem;
 }
